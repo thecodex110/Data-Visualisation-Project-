@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering College LMS - Complete Project Info Booklet (Hinglish)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #3b82f6;
+      --primary-bg: #eff6ff;
+      --secondary: #0d9488;
+      --dark: #0f172a;
+      --text: #334155;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --bg-card: #ffffff;
+      --accent-green: #10b981;
+      --accent-red: #ef4444;
+      --accent-amber: #f59e0b;
+      --accent-purple: #7c3aed;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background-color: #f8fafc;
+      line-height: 1.65;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      padding: 50px 60px;
+    }
+
+    /* Header */
+    .booklet-header {
+      border-bottom: 3px solid var(--primary-light);
+      padding-bottom: 25px;
+      margin-bottom: 35px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 5px 14px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-radius: 9999px;
+      background: var(--primary-bg);
+      color: var(--primary);
+      margin-bottom: 12px;
+      border: 1px solid #bfdbfe;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: var(--dark);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* Print notification banner */
+    .print-banner {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 10px;
+      padding: 14px 20px;
+      margin-bottom: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #065f46;
+      font-size: 0.95rem;
+    }
+    .print-banner button {
+      background: #059669;
+      color: #ffffff;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .print-banner button:hover {
+      background: #047857;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 45px;
+    }
+    h2 {
+      font-size: 1.45rem;
+      color: var(--primary);
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h3 {
+      font-size: 1.15rem;
+      color: var(--dark);
+      margin: 22px 0 10px 0;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 12px;
+      font-size: 0.98rem;
+    }
+
+    /* Cards */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 18px;
+      margin: 20px 0;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+    }
+    .card-icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Flow diagram box */
+    .flow-box {
+      background: #f8fafc;
+      border: 1px dashed #cbd5e1;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 20px 0;
+    }
+    .flow-step {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 18px;
+      position: relative;
+    }
+    .flow-step:last-child {
+      margin-bottom: 0;
+    }
+    .flow-num {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+    }
+    .flow-content {
+      flex: 1;
+    }
+    .flow-title {
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px;
+      font-size: 0.96rem;
+    }
+    .flow-text {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* Option Item Detailed Cards */
+    .option-item {
+      background: #ffffff;
+      border-left: 4px solid var(--primary-light);
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 10px 10px 0;
+      padding: 18px 22px;
+      margin-bottom: 18px;
+    }
+    .option-item.special {
+      border-left-color: var(--secondary);
+      background: #f0fdfa;
+    }
+    .option-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .option-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+    .option-badge {
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: #e2e8f0;
+      color: #475569;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+    th {
+      background-color: #f1f5f9;
+      color: var(--dark);
+      font-weight: 700;
+    }
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    /* Code & Terminal blocks */
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #0f172a;
+    }
+    pre {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 16px 20px;
+      border-radius: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      overflow-x: auto;
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+
+    /* QA Box */
+    .qa-box {
+      background: #faf5ff;
+      border: 1px solid #f3e8ff;
+      border-radius: 10px;
+      padding: 18px 22px;
+      margin-bottom: 16px;
+    }
+    .qa-q {
+      font-weight: 700;
+      color: #6b21a8;
+      font-size: 0.98rem;
+      margin-bottom: 6px;
+    }
+    .qa-a {
+      font-size: 0.9rem;
+      color: #3b0764;
+      line-height: 1.55;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .print-banner {
+        display: none;
+      }
+      .page-break {
+        page-break-before: always;
+      }
+      h2 {
+        border-bottom-color: #cbd5e1;
+      }
+      .card, .option-item, .qa-box {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Print Button Bar -->
+  <div class="print-banner">
+    <div>
+      <strong>📄 PDF Download / Print Ready:</strong> Is file ko direct PDF banane ke liye right side wale button par click karein ya <code>Ctrl + P</code> dabayein.
+    </div>
+    <button onclick="window.print()">🖨️ Save as PDF</button>
+  </div>
+
+  <!-- Header -->
+  <header class="booklet-header">
+    <span class="badge">Comprehensive Hinglish Guide & Walkthrough</span>
+    <h1>Engineering College Library Management System</h1>
+    <div class="subtitle">Complete Info Booklet, Navigation Guide & Syllabus Mapping Matrix</div>
+  </header>
+
+  <!-- Section 1 -->
+  <section>
+    <h2>🌟 1. Project Overview (Yeh Project Kya Hai?)</h2>
+    <p>
+      Yeh project ek <strong>Engineering College Library Management System (LMS)</strong> hai jise Python 3.x, SQLite relational database, aur modern Data Science / Data Visualization libraries (Matplotlib, Seaborn, Plotly, Folium, Squarify, Scipy, Statsmodels, Scikit-Learn) ke sath direct academic syllabus requirements ko fulfill karne ke liye design kiya gaya hai.
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon">🏛️</div>
+        <div class="card-title">6 Engineering Departments</div>
+        <div class="card-desc">Computer Science, AIML, Mechanical, Civil, Electronics, aur E&TC branches ki dedicated collections.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📚</div>
+        <div class="card-title">54 Technical Books</div>
+        <div class="card-desc">Core engineering textbooks (Tanenbaum, Cormen, Pressman, Shigley, Theraja) total copies aur shelf availability ke sath.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">👨‍🎓</div>
+        <div class="card-title">90 Students (10 States)</div>
+        <div class="card-desc">1st year se 4th year ke students jo Maharashtra, Karnataka, Gujarat, Delhi, UP, etc. se enrolled hain.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <div class="card-title">280+ Realistic Loans</div>
+        <div class="card-desc">12 mahino ka borrowing data jisme on-time returns, active loans, aur overdue late fines shamil hain.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section>
+    <h2>📁 2. Architecture & File Structure (Kaunsi File Kya Kaam Karti Hai?)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>File / Folder Name</th>
+          <th>Type</th>
+          <th>Pura Kaam & Role (Hinglish)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>main.py</code></td>
+          <td>Master Controller</td>
+          <td>Application ka main gate hai. Terminal me clean interactive menu chalata hai, user se choice input leta hai aur operations run karta hai.</td>
+        </tr>
+        <tr>
+          <td><code>db_setup.py</code></td>
+          <td>Database Engine</td>
+          <td><code>library.db</code> SQLite database banata hai. Agar pehle se nahi hai to 4 tables banakar <code>Faker</code> se realistic Indian data seed karta hai.</td>
+        </tr>
+        <tr>
+          <td><code>preprocessing.py</code></td>
+          <td>Data Processor</td>
+          <td>Raw SQL tables ko Pandas DataFrames me clean karta hai. Issue duration, overdue days, ₹5/day fine, aur PCA feature matrix calculate karta hai.</td>
+        </tr>
+        <tr>
+          <td><code>visualizations.py</code></td>
+          <td>Visualization Suite</td>
+          <td>Isme 19+ custom visualization functions hain jo Matplotlib, Seaborn, Plotly Express, Folium maps, aur Scikit-Learn se charts banate hain.</td>
+        </tr>
+        <tr>
+          <td><code>library.db</code></td>
+          <td>SQLite Database</td>
+          <td>Actual database file jisme <code>departments</code>, <code>students</code>, <code>books</code>, aur <code>transactions</code> store hote hain.</td>
+        </tr>
+        <tr>
+          <td><code>library_export.xlsx</code></td>
+          <td>BI Data Source</td>
+          <td>Power BI ke liye 4 sheets me exported Excel file.</td>
+        </tr>
+        <tr>
+          <td><code>charts/</code></td>
+          <td>Output Folder</td>
+          <td>High-resolution (300 DPI) static PNG charts save hone ki jagah.</td>
+        </tr>
+        <tr>
+          <td><code>interactive/</code></td>
+          <td>Output Folder</td>
+          <td>Interactive web charts aur HTML maps save hone ki jagah jo browser me open hote hain.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="page-break">
+    <h2>🗺️ 3. Navigation Guide: Kahan Click Karne Par Kahan Jaate Hain?</h2>
+    <p>Jab aap command line par <code>python main.py</code> run karte hain, to software ka flow is tarah chalta hai:</p>
+
+    <div class="flow-box">
+      <div class="flow-step">
+        <div class="flow-num">1</div>
+        <div class="flow-content">
+          <div class="flow-title">Terminal Launch: <code>python main.py</code></div>
+          <div class="flow-text">System check karta hai ki <code>library.db</code> mojood hai ya nahi. Agar nahi hai, to <code>db_setup.py</code> automatically tables bana kar 280+ transactions load kar deta hai.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">2</div>
+        <div class="flow-content">
+          <div class="flow-title">Main LMS Menu Screen (Options 0 se 13)</div>
+          <div class="flow-text">Aapke samne 14 options aate hain. Numbers 1 to 10 daily library activities ke liye hain, 11 aur 12 data visualization ke liye, aur 13 Power BI ke liye hai.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">3</div>
+        <div class="flow-content">
+          <div class="flow-title">Option 11 Press Karne Par -> Visualization Submenu Open Hota Hai</div>
+          <div class="flow-text">Terminal me ek naya 20-option dashboard khulta hai. Yahan aap kisi bhi specific chart number (1 se 19) ko select karke chart generate kar sakte hain.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">4</div>
+        <div class="flow-content">
+          <div class="flow-title">Static PNG vs Interactive Browser Visuals</div>
+          <div class="flow-text">Options 1 se 14, 17, aur 18 high-res PNG images generate karke <code>charts/</code> folder me save karte hain. Options 15, 16, aur 19 automatic aapke default web browser (Chrome/Edge) me interactive dashboard aur maps kholte hain!</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">5</div>
+        <div class="flow-content">
+          <div class="flow-title">Option 0 Press Karne Par -> Safe Return / Exit</div>
+          <div class="flow-text">Submenu me <code>0</code> dabane par wapas Main Menu par aa jate hain, aur Main Menu me <code>0</code> dabane par program safely close ho jata hai.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section>
+    <h2>📋 4. Main Menu ke Sabhi Options ka Word-to-Word Working</h2>
+
+    <div class="option-item">
+      <div class="option-header">
+        <span class="option-title">Option 1: 📚 View Library Catalog</span>
+        <span class="option-badge">view_books()</span>
+      </div>
+      <p>Library me kitni books hain, unke authors, department, publisher state, aur shelf availability (e.g. 4/5 copies) ek clean tabular format me display karta hai.</p>
+    </div>
+
+    <div class="option-item">
+      <div class="option-header">
+        <span class="option-title">Option 2: ➕ Add New Book</span>
+        <span class="option-badge">add_book()</span>
+      </div>
+      <p>Librarian se Title, Author, Department ID (1-6), Copies, aur Publisher State poochta hai aur <code>books</code> table me safely nayi row insert kar deta hai.</p>
+    </div>
+
+    <div class="option-item">
+      <div class="option-header">
+        <span class="option-title">Option 3: ➖ Remove / Minus Book</span>
+        <span class="option-badge">remove_book()</span>
+      </div>
+      <p>Book ID lene ke baad check karta hai ki kitni copies loan par hain. Isme 2 actions hain: (1) Unloaned copies minus karna, ya (2) Pure record ko delete karna. Agar active loan chal raha hai to system delete allow nahi karta!</p>
+    </div>
+
+    <div class="option-item">
+      <div class="option-header">
+        <span class="option-title">Option 4: 🔍 Search Books</span>
+        <span class="option-badge">search_books()</span>
+      </div>
+      <p>Title, Author ya Department ka koi bhi keyword (jaise "Python", "Tanenbaum", "Mechanical") search karke matching books list karta hai.</p>
+    </div>
+
+    <div class="option-item">
+      <div class="option-header">
+        <span class="option-title">Option 5 & 6: 👥 View & Add Students</span>
+        <span class="option-badge">view_students() | add_student()</span>
+      </div>
+      <p>College ke 90 students ka directory dikhata hai (Year 1-4, Department, Home State) aur naye student ko register karta hai.</p>
+    </div>
+
+    <div class="option-item">
+      <div class="option-header">
+        <span class="option-title">Option 7: 📖 Issue a Book (14-Day Auto Due Date)</span>
+        <span class="option-badge">issue_book()</span>
+      </div>
+      <p>Student ID aur Book ID poochta hai. Shelf availability check karta hai (available > 0). Issue date aaj ki set karta hai aur due date exact 14 din baad ki set karta hai. Shelf copies 1 minus ho jati hain.</p>
+    </div>
+
+    <div class="option-item">
+      <div class="option-header">
+        <span class="option-title">Option 8: 📥 Return a Book (Auto Fine ₹5/day)</span>
+        <span class="option-badge">return_book()</span>
+      </div>
+      <p>Transaction ID enter karne par check karta hai ki book late return hui ya on-time. Formula: <code>overdue_days = return_date - due_date</code>. Late hone par ₹5.00/day ke hisaab se fine calculate karke shelf stock me +1 restore karta hai.</p>
+    </div>
+
+    <div class="option-item">
+      <div class="option-header">
+        <span class="option-title">Option 9 & 10: ⚠️ View Overdue Loans & Student History</span>
+        <span class="option-badge">view_overdue_books() | student_history()</span>
+      </div>
+      <p>Option 9 current delinquent loans aur unka live fine dikhata hai. Option 10 kisi bhi specific student ka pura historical borrowing audit trail dikhata hai.</p>
+    </div>
+
+    <div class="option-item special">
+      <div class="option-header">
+        <span class="option-title">Option 11: 📊 Open Data Visualization Dashboard</span>
+        <span class="option-badge">visualization_menu()</span>
+      </div>
+      <p>20 dedicated chart options ka complete analytics dashboard submenu kholta hai!</p>
+    </div>
+
+    <div class="option-item special">
+      <div class="option-header">
+        <span class="option-title">Option 12: ⚡ Generate All Visual Analytics (One-Click)</span>
+        <span class="option-badge">generate_all_visualizations()</span>
+      </div>
+      <p>Bina kisi option ko baar-baar select kiye, sabhi 19 charts ko ek click me generate karke <code>charts/</code> aur <code>interactive/</code> folders me save kar deta hai.</p>
+    </div>
+
+    <div class="option-item">
+      <div class="option-header">
+        <span class="option-title">Option 13: 📑 Export Dataset for Power BI</span>
+        <span class="option-badge">export_for_power_bi()</span>
+      </div>
+      <p>Database ke charo tables ko <code>library_export.xlsx</code> me 4 alag sheets me export karta hai.</p>
+    </div>
+  </section>
+
+  <!-- Section 5 -->
+  <section class="page-break">
+    <h2>🎨 5. Visualization Dashboard (Submenu ke Sabhi 20 Options)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Opt #</th>
+          <th>Chart Naam</th>
+          <th>Library / Technique</th>
+          <th>Output File</th>
+          <th>Kya Explain Karta Hai?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1</strong></td>
+          <td>Collection by Department</td>
+          <td>Matplotlib Bar Chart</td>
+          <td><code>charts/books_by_department.png</code></td>
+          <td>Har engineering branch me total kitni book copies hain.</td>
+        </tr>
+        <tr>
+          <td><strong>2</strong></td>
+          <td>Author Analytics</td>
+          <td>Matplotlib Horizontal Bar</td>
+          <td><code>charts/author_distribution.png</code></td>
+          <td>Top 10 authors jinki books sabse zyada borrow hui hain.</td>
+        </tr>
+        <tr>
+          <td><strong>3</strong></td>
+          <td>Cleveland Dot Plot</td>
+          <td>Matplotlib Dot & Line</td>
+          <td><code>charts/dot_books_per_dept.png</code></td>
+          <td>High data-ink ratio alternative of bar chart.</td>
+        </tr>
+        <tr>
+          <td><strong>4</strong></td>
+          <td>Loan Status Breakdown</td>
+          <td>Grouped & Stacked Bar</td>
+          <td><code>charts/loan_status_breakdown.png</code></td>
+          <td>Returned vs Active vs Overdue loan breakdown per branch.</td>
+        </tr>
+        <tr>
+          <td><strong>5</strong></td>
+          <td>Duration Spread</td>
+          <td>Hist + Overlaid KDE + Violin</td>
+          <td><code>charts/duration_distributions.png</code></td>
+          <td>Student kitne din tak book apne paas rakhte hain.</td>
+        </tr>
+        <tr>
+          <td><strong>6</strong></td>
+          <td>Statistical Diagnostics</td>
+          <td>ECDF + Q-Q Plot + Log Trans</td>
+          <td><code>charts/statistical_diagnostics.png</code></td>
+          <td>Fine distribution ki normality check aur skewness removal.</td>
+        </tr>
+        <tr>
+          <td><strong>7</strong></td>
+          <td>Axis Orientation</td>
+          <td>Ridgeline KDE vs Boxplots</td>
+          <td><code>charts/vertical_vs_horizontal.png</code></td>
+          <td>Horizontal continuous flow vs Vertical discrete boxplots.</td>
+        </tr>
+        <tr>
+          <td><strong>8</strong></td>
+          <td>Proportions & Treemap</td>
+          <td>Pie + 100% Stacked + Treemap</td>
+          <td><code>charts/proportions_and_treemap.png</code></td>
+          <td>Whole-to-part ratio aur nested book title borrow volume.</td>
+        </tr>
+        <tr>
+          <td><strong>9</strong></td>
+          <td>Associations & PCA</td>
+          <td>Grammar of Graphics + PCA 2D</td>
+          <td><code>charts/associations_and_pca.png</code></td>
+          <td>Overdue vs Fine regression, correlation matrix, aur 2D PCA clusters.</td>
+        </tr>
+        <tr>
+          <td><strong>10</strong></td>
+          <td>Multivariate Pairplot</td>
+          <td>Seaborn Pairplot</td>
+          <td><code>charts/borrowing_pairplot.png</code></td>
+          <td>Sabhi numerical metrics ka pairwise correlation matrix.</td>
+        </tr>
+        <tr>
+          <td><strong>11</strong></td>
+          <td>Paired Slope Chart</td>
+          <td>Matplotlib Slope Lines</td>
+          <td><code>charts/due_vs_return_slope.png</code></td>
+          <td>Assigned due date (+14d) vs actual return date offset.</td>
+        </tr>
+        <tr>
+          <td><strong>12</strong></td>
+          <td>Time Series & Trends</td>
+          <td>Rolling Average + Linear Fit</td>
+          <td><code>charts/time_series_and_trends.png</code></td>
+          <td>Monthly issue volume trend aur 3-month smoothing.</td>
+        </tr>
+        <tr>
+          <td><strong>13</strong></td>
+          <td>Advanced Time Series</td>
+          <td>Dose-Response + Decompose</td>
+          <td><code>charts/advanced_time_series.png</code></td>
+          <td>Fine buildup curve aur additive seasonal decomposition.</td>
+        </tr>
+        <tr>
+          <td><strong>14</strong></td>
+          <td>Activity Heatmap</td>
+          <td>Seaborn Density Heatmap</td>
+          <td><code>charts/activity_heatmap.png</code></td>
+          <td>Department vs Month borrowing density with continuous colormap.</td>
+        </tr>
+        <tr>
+          <td><strong>15</strong></td>
+          <td>Geospatial Choropleth</td>
+          <td>Plotly Express Interactive</td>
+          <td><code>interactive/choropleth_map.html</code></td>
+          <td>India ke states ka student demographics choropleth map.</td>
+        </tr>
+        <tr>
+          <td><strong>16</strong></td>
+          <td>Geospatial Layers</td>
+          <td>Folium Leaflet Multi-layer</td>
+          <td><code>interactive/folium_map.html</code></td>
+          <td>Student home origins (circles) + Campus reading rooms (pins).</td>
+        </tr>
+        <tr>
+          <td><strong>17</strong></td>
+          <td>Proportional Cartogram</td>
+          <td>Scatter Symbol Map (WGS84)</td>
+          <td><code>charts/cartogram_proportional.png</code></td>
+          <td>Bubble size proportional to total state borrow volume.</td>
+        </tr>
+        <tr>
+          <td><strong>18</strong></td>
+          <td>Design Principles Demo</td>
+          <td>Poor 3D Clutter vs Clean Bar</td>
+          <td><code>charts/design_principles_comparison.png</code></td>
+          <td>Chartjunk elimination aur Proportional Ink principle demo.</td>
+        </tr>
+        <tr>
+          <td><strong>19</strong></td>
+          <td>Interactive Dashboard</td>
+          <td>Plotly HTML Interactive</td>
+          <td><code>interactive/interactive_dashboard.html</code></td>
+          <td>Hover tooltips, zoom, pan, aur filtering in web browser.</td>
+        </tr>
+        <tr>
+          <td><strong>20</strong></td>
+          <td>Batch Render All</td>
+          <td>Automated Pipeline</td>
+          <td>All <code>charts/</code> and <code>interactive/</code></td>
+          <td>Sabhi visual reports ko ek second me generate karta hai.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 6 -->
+  <section>
+    <h2>💡 6. Viva / Oral Exam Q&A Preparation (Hinglish)</h2>
+
+    <div class="qa-box">
+      <div class="qa-q">Q1: Aapke project me Edward Tufte ka Data-Ink Ratio principle kahan use hua hai?</div>
+      <div class="qa-a"><strong>Ans:</strong> Hamne Option 3 (Cleveland Dot Plot) aur Option 18 (Design Principles Demo) me iska use kiya hai. Unnecessary 3D depth, heavy colored backgrounds, aur redundant grid lines ko hatakar sirf meaningful data points ko ink di gayi hai.</div>
+    </div>
+
+    <div class="qa-box">
+      <div class="qa-q">Q2: PCA (Principal Component Analysis) ka library data me kya role hai?</div>
+      <div class="qa-a"><strong>Ans:</strong> Har student 6 departments ki books padhta hai (6 dimensions). PCA in 6 features ko compress karke 2 orthogonal components (PC1: Borrowing Volume, PC2: Department Focus) me convert karta hai jisse hum 2D scatter plot par student profiles ko cluster kar sakte hain.</div>
+    </div>
+
+    <div class="qa-box">
+      <div class="qa-q">Q3: Q-Q Plot aur ECDF se hum kya check karte hain?</div>
+      <div class="qa-a"><strong>Ans:</strong> Q-Q plot se check hota hai ki library fines ka distribution normal distribution ko follow karta hai ya nahi. ECDF se pata chalta hai ki kitne percent students par zero fine hai aur kitne percent par maximum fine laga hai bina kisi binning bias ke.</div>
+    </div>
+
+    <div class="qa-box">
+      <div class="qa-q">Q4: Power BI integration kaise kiya gaya hai?</div>
+      <div class="qa-a"><strong>Ans:</strong> System SQLite database se 4 relational tables (transactions as Fact Table; books, students, departments as Dimension Tables) ko <code>library_export.xlsx</code> me export karta hai, jise Power BI Desktop me Star Schema model me connect karke DAX measures banaye gaye hain.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align: center; border-top: 1px solid var(--border); padding-top: 25px; margin-top: 40px; color: var(--text-muted); font-size: 0.85rem;">
+    Engineering College Library Management System & Data Visualization Platform &bull; Built with Python 3.x, SQLite, Matplotlib, Seaborn, Plotly, Folium & Power BI.
+  </footer>
+
+</div>
+
+</body>
+</html>
