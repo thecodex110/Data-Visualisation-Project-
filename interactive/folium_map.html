@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9fdf4dbf3351a3fde8308823ef2b6e0a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9fdf4dbf3351a3fde8308823ef2b6e0a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9fdf4dbf3351a3fde8308823ef2b6e0a = L.map(
+                "map_9fdf4dbf3351a3fde8308823ef2b6e0a",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cd69f25c22a546700f654ee4c65f5b48 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cd69f25c22a546700f654ee4c65f5b48.addTo(map_9fdf4dbf3351a3fde8308823ef2b6e0a);
+        
+    
+            var feature_group_8df92cea9045102c246c53c1784157bb = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_5de8886280738fd04fc0046364037b66 = L.circleMarker(
+                [28.7041, 77.1025],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_2a482f3e20ca0d600af4792564be72ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6955ac2ed27fe8441dd10ecdacfb3612 = $(`<div id="html_6955ac2ed27fe8441dd10ecdacfb3612" style="width: 100.0%; height: 100.0%;">State: Delhi<br>Students: 15<br>Book Loans: 40</div>`)[0];
+                popup_2a482f3e20ca0d600af4792564be72ce.setContent(html_6955ac2ed27fe8441dd10ecdacfb3612);
+            
+        
+
+        circle_marker_5de8886280738fd04fc0046364037b66.bindPopup(popup_2a482f3e20ca0d600af4792564be72ce)
+        ;
+
+        
+    
+    
+            var circle_marker_8e1b341d11ef627a041e204f4ce1f0ad = L.circleMarker(
+                [22.2587, 71.1924],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.4, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_335487248670463ddc429af5c67abb8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e04bb114e53dd5c1a03749884874a615 = $(`<div id="html_e04bb114e53dd5c1a03749884874a615" style="width: 100.0%; height: 100.0%;">State: Gujarat<br>Students: 8<br>Book Loans: 20</div>`)[0];
+                popup_335487248670463ddc429af5c67abb8a.setContent(html_e04bb114e53dd5c1a03749884874a615);
+            
+        
+
+        circle_marker_8e1b341d11ef627a041e204f4ce1f0ad.bindPopup(popup_335487248670463ddc429af5c67abb8a)
+        ;
+
+        
+    
+    
+            var circle_marker_161a142e311dbd14eb3283ccd4be5242 = L.circleMarker(
+                [15.3173, 75.7139],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_94d8a148a352981c174ee14ffa818735 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5034e1c8795966c90b33abe58c4908d1 = $(`<div id="html_5034e1c8795966c90b33abe58c4908d1" style="width: 100.0%; height: 100.0%;">State: Karnataka<br>Students: 15<br>Book Loans: 51</div>`)[0];
+                popup_94d8a148a352981c174ee14ffa818735.setContent(html_5034e1c8795966c90b33abe58c4908d1);
+            
+        
+
+        circle_marker_161a142e311dbd14eb3283ccd4be5242.bindPopup(popup_94d8a148a352981c174ee14ffa818735)
+        ;
+
+        
+    
+    
+            var circle_marker_1f8944fb7e04197738013883a4070c04 = L.circleMarker(
+                [10.8505, 76.2711],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.6, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_3be64699f6961de33457237aae1bde13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_91344adf4a8b89e6942456eb9e8b6b29 = $(`<div id="html_91344adf4a8b89e6942456eb9e8b6b29" style="width: 100.0%; height: 100.0%;">State: Kerala<br>Students: 2<br>Book Loans: 9</div>`)[0];
+                popup_3be64699f6961de33457237aae1bde13.setContent(html_91344adf4a8b89e6942456eb9e8b6b29);
+            
+        
+
+        circle_marker_1f8944fb7e04197738013883a4070c04.bindPopup(popup_3be64699f6961de33457237aae1bde13)
+        ;
+
+        
+    
+    
+            var circle_marker_f4f72b05aa4940943e3c8047ed378365 = L.circleMarker(
+                [19.7515, 75.7139],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_351d835d0e8f921434b068e4f932f079 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f8fad47712adaf27452bb3689e6fa8b = $(`<div id="html_7f8fad47712adaf27452bb3689e6fa8b" style="width: 100.0%; height: 100.0%;">State: Maharashtra<br>Students: 9<br>Book Loans: 25</div>`)[0];
+                popup_351d835d0e8f921434b068e4f932f079.setContent(html_7f8fad47712adaf27452bb3689e6fa8b);
+            
+        
+
+        circle_marker_f4f72b05aa4940943e3c8047ed378365.bindPopup(popup_351d835d0e8f921434b068e4f932f079)
+        ;
+
+        
+    
+    
+            var circle_marker_dff99ff29048ad2b7b7d29279b76793e = L.circleMarker(
+                [27.0238, 74.2179],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_62e1310dabb59d54c00c97a7a52f654c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5d1be53d57b945a20ac7970cbfb0bde = $(`<div id="html_f5d1be53d57b945a20ac7970cbfb0bde" style="width: 100.0%; height: 100.0%;">State: Rajasthan<br>Students: 7<br>Book Loans: 30</div>`)[0];
+                popup_62e1310dabb59d54c00c97a7a52f654c.setContent(html_f5d1be53d57b945a20ac7970cbfb0bde);
+            
+        
+
+        circle_marker_dff99ff29048ad2b7b7d29279b76793e.bindPopup(popup_62e1310dabb59d54c00c97a7a52f654c)
+        ;
+
+        
+    
+    
+            var circle_marker_720e1b3b95f1e38ddbbfa70bd70d2d41 = L.circleMarker(
+                [11.1271, 78.6569],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_586a74137ab48bcc8f6e3d7dd52c4c40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb9e3d8553a5b7b348c32a2d60eb5455 = $(`<div id="html_eb9e3d8553a5b7b348c32a2d60eb5455" style="width: 100.0%; height: 100.0%;">State: Tamil Nadu<br>Students: 9<br>Book Loans: 39</div>`)[0];
+                popup_586a74137ab48bcc8f6e3d7dd52c4c40.setContent(html_eb9e3d8553a5b7b348c32a2d60eb5455);
+            
+        
+
+        circle_marker_720e1b3b95f1e38ddbbfa70bd70d2d41.bindPopup(popup_586a74137ab48bcc8f6e3d7dd52c4c40)
+        ;
+
+        
+    
+    
+            var circle_marker_4358764dc564b557fb6e117e4612189c = L.circleMarker(
+                [18.1124, 79.0193],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_476665eb51ac0de3308fb28efb40fe7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7986e645d4466671addda8dc7e3f09d = $(`<div id="html_d7986e645d4466671addda8dc7e3f09d" style="width: 100.0%; height: 100.0%;">State: Telangana<br>Students: 9<br>Book Loans: 25</div>`)[0];
+                popup_476665eb51ac0de3308fb28efb40fe7c.setContent(html_d7986e645d4466671addda8dc7e3f09d);
+            
+        
+
+        circle_marker_4358764dc564b557fb6e117e4612189c.bindPopup(popup_476665eb51ac0de3308fb28efb40fe7c)
+        ;
+
+        
+    
+    
+            var circle_marker_0c72b74a9e5dfc133771dec07e8bdb18 = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.600000000000001, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_53268ba2d32917a575f3d5e7c5291a20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04b6d76bbbacc25f402a74bbaad9d21d = $(`<div id="html_04b6d76bbbacc25f402a74bbaad9d21d" style="width: 100.0%; height: 100.0%;">State: Uttar Pradesh<br>Students: 7<br>Book Loans: 20</div>`)[0];
+                popup_53268ba2d32917a575f3d5e7c5291a20.setContent(html_04b6d76bbbacc25f402a74bbaad9d21d);
+            
+        
+
+        circle_marker_0c72b74a9e5dfc133771dec07e8bdb18.bindPopup(popup_53268ba2d32917a575f3d5e7c5291a20)
+        ;
+
+        
+    
+    
+            var circle_marker_0d9c74c4bb001d3255a79b04d87f1cb2 = L.circleMarker(
+                [22.9868, 87.855],
+                {"bubblingMouseEvents": true, "color": "#1E40AF", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B82F6", "fillOpacity": 0.65, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.2, "stroke": true, "weight": 3}
+            ).addTo(feature_group_8df92cea9045102c246c53c1784157bb);
+        
+    
+        var popup_e051fc6ad245e1add1d5bbf7a728939e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_514b1255062683693fb64c1d4e9519b6 = $(`<div id="html_514b1255062683693fb64c1d4e9519b6" style="width: 100.0%; height: 100.0%;">State: West Bengal<br>Students: 9<br>Book Loans: 21</div>`)[0];
+                popup_e051fc6ad245e1add1d5bbf7a728939e.setContent(html_514b1255062683693fb64c1d4e9519b6);
+            
+        
+
+        circle_marker_0d9c74c4bb001d3255a79b04d87f1cb2.bindPopup(popup_e051fc6ad245e1add1d5bbf7a728939e)
+        ;
+
+        
+    
+    
+            feature_group_8df92cea9045102c246c53c1784157bb.addTo(map_9fdf4dbf3351a3fde8308823ef2b6e0a);
+        
+    
+            var feature_group_9b4a1c2c36a430dd139feda7999967d7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_09197909feb94ed26383a30dce67426f = L.marker(
+                [18.5204, 73.8567],
+                {
+}
+            ).addTo(feature_group_9b4a1c2c36a430dd139feda7999967d7);
+        
+    
+            var icon_908cac77474122441b105c1d617b98dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_51d7a4b9cc5d46a19e6b2e5b8a454bbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ffc1b13bb93e732c59f914397f37182 = $(`<div id="html_2ffc1b13bb93e732c59f914397f37182" style="width: 100.0%; height: 100.0%;">Branch: Computer Science Reading Room</div>`)[0];
+                popup_51d7a4b9cc5d46a19e6b2e5b8a454bbc.setContent(html_2ffc1b13bb93e732c59f914397f37182);
+            
+        
+
+        marker_09197909feb94ed26383a30dce67426f.bindPopup(popup_51d7a4b9cc5d46a19e6b2e5b8a454bbc)
+        ;
+
+        
+    
+    
+                marker_09197909feb94ed26383a30dce67426f.setIcon(icon_908cac77474122441b105c1d617b98dc);
+            
+    
+            var marker_b52ba0da6bf61254a178c04ee23a0881 = L.marker(
+                [18.522, 73.858],
+                {
+}
+            ).addTo(feature_group_9b4a1c2c36a430dd139feda7999967d7);
+        
+    
+            var icon_319d706889b31e572c83aef82684ff24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1b72804ad33ed8905878f7259f461aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c448a142e857428a0894dd0c958effe5 = $(`<div id="html_c448a142e857428a0894dd0c958effe5" style="width: 100.0%; height: 100.0%;">Branch: Mechanical Engineering Library</div>`)[0];
+                popup_c1b72804ad33ed8905878f7259f461aa.setContent(html_c448a142e857428a0894dd0c958effe5);
+            
+        
+
+        marker_b52ba0da6bf61254a178c04ee23a0881.bindPopup(popup_c1b72804ad33ed8905878f7259f461aa)
+        ;
+
+        
+    
+    
+                marker_b52ba0da6bf61254a178c04ee23a0881.setIcon(icon_319d706889b31e572c83aef82684ff24);
+            
+    
+            var marker_d1cc62e6b45809aa64a64b8f92a0087d = L.marker(
+                [18.519, 73.855],
+                {
+}
+            ).addTo(feature_group_9b4a1c2c36a430dd139feda7999967d7);
+        
+    
+            var icon_7021b458796628ca95d3f74715fb7e77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fcb186d9ea20697725c3667aec2cfdab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b30bc69b92d5c38188df91fc8bba352 = $(`<div id="html_2b30bc69b92d5c38188df91fc8bba352" style="width: 100.0%; height: 100.0%;">Branch: Civil Engineering Branch</div>`)[0];
+                popup_fcb186d9ea20697725c3667aec2cfdab.setContent(html_2b30bc69b92d5c38188df91fc8bba352);
+            
+        
+
+        marker_d1cc62e6b45809aa64a64b8f92a0087d.bindPopup(popup_fcb186d9ea20697725c3667aec2cfdab)
+        ;
+
+        
+    
+    
+                marker_d1cc62e6b45809aa64a64b8f92a0087d.setIcon(icon_7021b458796628ca95d3f74715fb7e77);
+            
+    
+            var marker_c004b5f78d0127d2f5fe3e5ec0a7009c = L.marker(
+                [18.5215, 73.859],
+                {
+}
+            ).addTo(feature_group_9b4a1c2c36a430dd139feda7999967d7);
+        
+    
+            var icon_64b1e0815d8751801575930dc3f449f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2023132252c3faa49c117c0db610e533 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e00de35618d1bc52fcd57375e770804d = $(`<div id="html_e00de35618d1bc52fcd57375e770804d" style="width: 100.0%; height: 100.0%;">Branch: AIML Research Lab Reading Desk</div>`)[0];
+                popup_2023132252c3faa49c117c0db610e533.setContent(html_e00de35618d1bc52fcd57375e770804d);
+            
+        
+
+        marker_c004b5f78d0127d2f5fe3e5ec0a7009c.bindPopup(popup_2023132252c3faa49c117c0db610e533)
+        ;
+
+        
+    
+    
+                marker_c004b5f78d0127d2f5fe3e5ec0a7009c.setIcon(icon_64b1e0815d8751801575930dc3f449f9);
+            
+    
+            var marker_7766f6058a124a589ae79b78726a86f4 = L.marker(
+                [18.523, 73.854],
+                {
+}
+            ).addTo(feature_group_9b4a1c2c36a430dd139feda7999967d7);
+        
+    
+            var icon_701f374673ee6fba65f695ac378310c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c067886938d1f17c6b2bf85388aa81d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_049dcd9845c9c7d15b427d0779bd566c = $(`<div id="html_049dcd9845c9c7d15b427d0779bd566c" style="width: 100.0%; height: 100.0%;">Branch: Electronics Reading Room</div>`)[0];
+                popup_4c067886938d1f17c6b2bf85388aa81d.setContent(html_049dcd9845c9c7d15b427d0779bd566c);
+            
+        
+
+        marker_7766f6058a124a589ae79b78726a86f4.bindPopup(popup_4c067886938d1f17c6b2bf85388aa81d)
+        ;
+
+        
+    
+    
+                marker_7766f6058a124a589ae79b78726a86f4.setIcon(icon_701f374673ee6fba65f695ac378310c8);
+            
+    
+            var marker_8983e05f5148a598b792633088611e58 = L.marker(
+                [18.518, 73.8575],
+                {
+}
+            ).addTo(feature_group_9b4a1c2c36a430dd139feda7999967d7);
+        
+    
+            var icon_cf7e6613196b066c89606bc70ffd3a6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_519a55cec3bd7f56f37059c475b8a076 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1238198e34aeffb4f34409b0e963d4de = $(`<div id="html_1238198e34aeffb4f34409b0e963d4de" style="width: 100.0%; height: 100.0%;">Branch: E&TC Department Library</div>`)[0];
+                popup_519a55cec3bd7f56f37059c475b8a076.setContent(html_1238198e34aeffb4f34409b0e963d4de);
+            
+        
+
+        marker_8983e05f5148a598b792633088611e58.bindPopup(popup_519a55cec3bd7f56f37059c475b8a076)
+        ;
+
+        
+    
+    
+                marker_8983e05f5148a598b792633088611e58.setIcon(icon_cf7e6613196b066c89606bc70ffd3a6d);
+            
+    
+            feature_group_9b4a1c2c36a430dd139feda7999967d7.addTo(map_9fdf4dbf3351a3fde8308823ef2b6e0a);
+        
+    
+            var layer_control_eb070fb4fca8a1e127fb5a1318354b50_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cd69f25c22a546700f654ee4c65f5b48,
+                },
+                overlays :  {
+                    "Student Home States" : feature_group_8df92cea9045102c246c53c1784157bb,
+                    "Campus Reading Rooms (Branches)" : feature_group_9b4a1c2c36a430dd139feda7999967d7,
+                },
+            };
+            let layer_control_eb070fb4fca8a1e127fb5a1318354b50 = L.control.layers(
+                layer_control_eb070fb4fca8a1e127fb5a1318354b50_layers.base_layers,
+                layer_control_eb070fb4fca8a1e127fb5a1318354b50_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_9fdf4dbf3351a3fde8308823ef2b6e0a);
+
+        
+</script>
+</html>
