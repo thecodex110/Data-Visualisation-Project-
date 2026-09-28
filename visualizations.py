@@ -1,3 +1,4 @@
+# All import
 import os
 import webbrowser
 import numpy as np
@@ -12,6 +13,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import folium
 import squarify
+
 
 from preprocessing import (
     get_cleaned_transactions,
