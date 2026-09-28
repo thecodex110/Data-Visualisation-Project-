@@ -327,9 +327,9 @@ def plot_proportions_and_treemap():
     print(f" [Chart Saved] Proportions & Treemap -> {out_path}")
     show_and_close()
 
-# ==============================================================================
+
 # SECTION 4: ASSOCIATIONS & ADVANCED ANALYTICS (Scatter, Correlogram, PCA, Pairs)
-# ==============================================================================
+
 
 def plot_associations_and_pca():
     """Visualizing associations: Grammar of graphics scatter+regression, Correlogram, PCA 2D scatter."""
